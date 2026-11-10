@@ -1,0 +1,477 @@
+/* GLOBAL RESET & VARIABLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #050c08;
+    color: #e2e8f0;
+    overflow-x: hidden;
+}
+
+/* SUB-HEADINGS */
+.sub-heading {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #10b981;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.sub-heading.red {
+    color: #ef4444;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.badge-75 {
+    background-color: #ef4444;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    font-weight: 900;
+    font-size: 0.9rem;
+    border-radius: 2px;
+}
+
+.logo-text {
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 0.95rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.btn-get-in-touch {
+    background-color: #10b981 !important;
+    color: #000 !important;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600 !important;
+}
+
+/* HERO SECTION */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 5%;
+    gap: 4rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.05;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+}
+
+.hero-desc {
+    color: #94a3b8;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-primary {
+    background-color: #ef4444;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.hero-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-card {
+    background-color: #0a1811;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    border-radius: 16px;
+    padding: 1rem;
+    position: relative;
+    max-width: 420px;
+    width: 100%;
+}
+
+.hero-card img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    object-fit: cover;
+    height: 450px;
+}
+
+.hero-card-tag {
+    background: #0d2218;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.tag-title {
+    display: block;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.tag-desc {
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+/* METRICS SECTION */
+.metrics-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 2rem 5%;
+}
+
+.metric-box {
+    background-color: #0a1811;
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.metric-box h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.metric-box p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    display: flex;
+    padding: 6rem 5%;
+    gap: 5rem;
+    align-items: flex-start;
+}
+
+.about-left, .about-right {
+    flex: 1;
+}
+
+.about-left h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.bio-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 0.85rem;
+}
+
+.bio-label {
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.bio-val {
+    color: #fff;
+    font-weight: 500;
+    text-align: right;
+}
+
+.about-right h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.about-right p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+/* TIMELINE SECTION */
+.timeline-section {
+    padding: 4rem 5%;
+}
+
+.timeline-section h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.timeline-track {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    position: relative;
+}
+
+.timeline-track::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: rgba(239, 68, 68, 0.4);
+}
+
+.timeline-item {
+    position: relative;
+    padding-top: 1.5rem;
+}
+
+.timeline-item .dot {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #ef4444;
+    border-radius: 50%;
+}
+
+.timeline-item .year {
+    font-weight: 800;
+    color: #10b981;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.4rem;
+}
+
+.timeline-item p {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+/* RECORDS SECTION */
+.records-section {
+    padding: 6rem 5%;
+}
+
+.records-section h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 2.5rem;
+}
+
+.records-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.record-card {
+    background-color: #0a1811;
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.record-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.record-header h3 {
+    color: #ef4444;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.pill-green {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    font-size: 0.65rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.record-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.record-row strong {
+    color: #fff;
+}
+
+.record-disclaimer {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+/* MILESTONES SECTION */
+.milestones-section {
+    padding: 4rem 5% 6rem 5%;
+}
+
+.milestones-section h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 2.5rem;
+}
+
+.milestones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.milestone-box {
+    background-color: #0a1811;
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.milestone-box .icon {
+    font-size: 1.5rem;
+    background: rgba(16, 185, 129, 0.1);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.milestone-box h4 {
+    font-size: 0.95rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.milestone-box p {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    line-height: 1.4;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 3rem 5%;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #64748b;
+    font-size: 0.8rem;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media(max-width: 1024px) {
+    .hero-section, .about-section {
+        flex-direction: column;
+    }
+    .timeline-track, .records-grid, .milestones-grid, .metrics-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 768px) {
+    .timeline-track, .records-grid, .milestones-grid, .metrics-section {
+        grid-template-columns: 1fr;
+    }
+    .hero-title {
+        font-size: 3rem;
+    }
+}
